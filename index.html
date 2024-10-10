@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebe71ef2e7.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="right">Sourav Kumar Portfolio</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="first_sec">
+            <div class="lft">
+                <img src="./img/profile.png" alt="Image of Sourav">
+            </div>
+
+            <div class="rgt">
+                Hi, My name is <span class="colour">Sourav Kumar Burnwal</span>
+                <div>I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/sourav-kumar-373327222/" target="_blank"><button class="custom-btn btn">Resume</button></a>
+                    <a href="https://github.com/Sourav072" target="_blank"><button class="custom-btn btn">Github</button></a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="education" class="snd_sec">
+            <i class="fa-sharp-duotone fa-solid fa-graduation-cap"></i> &nbsp;
+            <span class="education">My Education Qualifications</span>
+            <h2>College</h2>
+            <div class="content">
+                <div class="text">
+                    <p class="university">Jain University</p>
+                    <p class="degree">MCA (Specialization: Full Stack)</p>
+                    <p class="year">August 2019 - July 2022</p>
+                    <p class="university">Techno India University</p>
+                    <p class="degree">B Com (Hons.)</p>
+                    <p class="year">2022 - December 2024</p>
+                </div>
+                <div class="image">
+                    <img src="./img/college.png" alt="college image">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="skills" class="third_sec">
+            <i class="fa-sharp fa-solid fa-info"></i> &nbsp; <span class="skills">My Soft Skills</span>
+            <h2>Skills</h2>
+            <div class="content_two">
+                <div class="text">
+                    <p>CEH</p>
+                    <p>WAPT</p>
+                    <p>NPT</p>
+                    <p>C|CT</p>
+                    <p>TEAMWORK</p>
+                    <p>PROBLEM&nbsp;SOLVING</p>
+                </div>
+                <div class="image image_two">
+                    <img src="./img/softskills.png" alt="soft skills">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="certificates" class="fourth_sec">
+            <i class="fa-duotone fa-solid fa-certificate"></i> &nbsp; <span class="certificates">Earned Certificates</span>
+            <h2>Certificates</h2>
+            <div class="content_three transitions">
+                <p><a href="https://www.linkedin.com/in/sourav-kumar-373327222/details/certifications/" target="_blank" data-hover-text="Certified Ethical Hacker">CEH</a></p>
+                <p><a href="https://www.linkedin.com/in/sourav-kumar-373327222/details/certifications/" target="_blank" data-hover-text="Web Application Penetration Tester">WAPT</a></p>
+                <p><a href="https://www.linkedin.com/in/sourav-kumar-373327222/details/certifications/" target="_blank" data-hover-text="Network Penetration Tester ">NPT</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer id="contact">
+            <div class="footer">
+                <div class="footer_first">
+                    <h3>Sourav's Portfolio</h3>
+                </div>
+                <div class="footer_second">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+              Copyright &copy; | All rights reserved
+           </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer,', ' Cyber Security Engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

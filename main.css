@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 11, 38);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(6, 3, 61);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: lavender;
+}
+
+.right {
+    font-size: 1.5rem;
+}
+
+.first_sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.first_sec > div {
+    width: 50%;
+    /* background-color: green; */
+}
+
+.rgt {
+    /* background-color: indianred; */
+    font-size: 3rem;
+    width: 34px;
+    /* margin: 70px 0px; */
+    /* align-items: center; */
+}
+
+/* for styling buttons */
+.buttons {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn {
+    position: relative;
+    color: #f4f4f4;
+    border: none;
+    z-index: 2;
+}
+
+.btn::before, .btn::after {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 40%;
+    border: 1px solid;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #e5ed00;
+    border-left-color: #e5ed00;
+}
+
+.btn::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #e5ed00;
+    border-right-color: #e5ed00;
+}
+
+.btn:hover::before, .btn:hover::after {
+    border-color: #bf00ff;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px #ffd000, 0 0 5px #b7ff00 inset;
+}
+
+/* end of button styling */
+.lft {
+    /* background-color: indianred; */
+    width: 34px;
+}
+
+.lft img {
+    height: 100%;
+    width: 50%;
+    margin: 10px 0px;
+    padding-left: 180px;
+}
+
+/* for changing profile image */
+.lft img:hover {
+    content: url(./img/profile2.png);
+}
+
+.colour {
+    color: rgb(163, 97, 224);
+}
+
+#element {
+    color: lavender;
+}
+
+
+
+/* 2nd page */
+
+.snd_sec {
+    max-width: 80vw;
+    margin: auto;
+    height: 60vh;
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.image img {
+    width: 50px;
+    height: 100px;
+    display: block;
+}
+
+.image {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+main hr {
+    border: 0;
+    background: aliceblue;
+    height: 1.2px;
+    margin: 60px 84px;
+
+}
+
+.education {
+    max-width: 60%;
+    color: gray;
+}
+
+h2 {                           /* for both(2nd and third) the pages  */ 
+    font-size: 2rem;
+}
+
+.university {
+    margin-left: 1em;
+    padding: 0.6rem;
+    /* font-style: italic; */
+    font-weight: 600;
+}
+
+.degree {
+    margin-left: 4em;
+}
+.year{
+    margin-left: 8em;
+    padding: 0.6rem;
+    font-weight: 200;    
+}
+
+.image img {
+    max-width: 70%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    margin-left: 30em;
+    margin-bottom: 1em;
+}
+
+.image_two {
+    margin-left: 10rem;
+}
+/* 3rd page */
+
+.third_sec {
+    max-width: 80vw;
+    margin: auto;
+    height: 60vh;
+    padding: 5px;
+}
+
+.skills {
+    color: gray;
+    max-width: 60%;
+}
+
+.content_two {
+    display: flex;
+    align-items: center;
+}
+
+.text p {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* .image_two img {
+    padding-left: 10rem;
+} */
+
+
+/* fouth page */
+
+.fourth_sec {
+    max-width: 80vw;
+    margin: auto;
+    height: 30vh;
+    padding: 5px;
+}
+
+.certificates {
+    color: gray;
+    max-width: 60%;
+}
+
+.content_three {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.transitions a {
+    display: block;
+    position: relative;
+    /* overflow: hidden; */
+    transition: color 0.4s;
+}
+
+/* underline effects */
+/* .transitions a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: indianred;
+    transition: width 0.6s linear;
+} */
+
+/* hover effect to expand the underline */
+.transitions a:hover::before {
+    width: 100%;
+}
+
+/* hover effect to change text color */
+.transitions a:hover {
+    color: indianred;
+}
+
+/* original text and expand text */
+.transitions a::after {
+    content: attr(data-hover-text);
+    /* font-size: 1rem; */
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    transition: color 0.4s, left 0.6s;
+}
+
+/* show expand text on hover */
+.transitions a:hover::after {
+    background-color: black;
+    color: white;
+    left: 0;
+}
+
+.content_three p {
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.content_three a {
+    color: aliceblue;
+    text-decoration: none;
+}
